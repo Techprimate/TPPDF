@@ -62,6 +62,11 @@ public class PDFGenerator: PDFGeneratorProtocol, CustomStringConvertible {
      Relative value tracking progress
      */
     public let progress = Progress.discreteProgress(totalUnitCount: 3)
+    
+    /**
+     Delegate for image processing. Called after resizing and scaling and before drawing.
+     */
+    public var imageDelegate: PDFGeneratorImageDelegate?
 
     /**
      Font of each container.

@@ -94,3 +94,16 @@ public class PDFImage: PDFDocumentObject {
                  cornerRadius: self.cornerRadius)
     }
 }
+
+
+extension PDFImage: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(image)
+        hasher.combine(caption)
+        hasher.combine(NSCoder.string(for: size))
+        hasher.combine(sizeFit)
+        hasher.combine(quality)
+        hasher.combine(options.rawValue)
+        hasher.combine(cornerRadius)
+    }
+}

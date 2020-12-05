@@ -38,4 +38,18 @@ public class PDFAttributedText: PDFText {
     override internal var copy: PDFText {
         PDFAttributedText(text: text)
     }
+    
+    public override func hash(into hasher: inout Hasher) {
+        hasher.combine(text)
+    }
+    
+    /**
+     TODO: Documentation
+     */
+    public static func == (lhs: PDFAttributedText, rhs: PDFAttributedText) -> Bool {
+        guard lhs.text == rhs.text else {
+            return false
+        }
+        return true
+    }
 }

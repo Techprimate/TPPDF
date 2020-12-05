@@ -8,7 +8,7 @@
 /**
  Protocol all text objects should implement
  */
-public class PDFText: PDFDocumentObject, CustomStringConvertible {
+public class PDFText: PDFDocumentObject, CustomStringConvertible, Hashable {
 
     /**
      TODO: Documentation
@@ -35,4 +35,9 @@ public class PDFText: PDFDocumentObject, CustomStringConvertible {
         }
         return false
     }
+
+    public func hash(into hasher: inout Hasher) {
+        fatalError()
+    }
 }
+

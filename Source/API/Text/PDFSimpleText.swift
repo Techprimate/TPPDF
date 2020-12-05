@@ -52,4 +52,19 @@ public class PDFSimpleText: PDFText {
     override internal var copy: PDFText {
         PDFSimpleText(text: self.text, spacing: self.spacing, style: self.style)
     }
+    
+    override public func hash(into hasher: inout Hasher) {
+        hasher.combine(text)
+        hasher.combine(spacing)
+    }
+    
+    public static func == (lhs: PDFSimpleText, rhs: PDFSimpleText) -> Bool {
+        guard lhs.text == rhs.text else {
+            return false
+        }
+        guard lhs.spacing == rhs.spacing else {
+            return false
+        }
+        return true
+    }
 }
