@@ -38,6 +38,9 @@ public class PDFDocument: CustomStringConvertible {
      */
     public var styles: [PDFTextStyle] = []
 
+    /// Configuration for document/paper background
+    public var background = PDFDocumentBackground()
+
     // MARK: - INTERNAL VARS
 
     /**

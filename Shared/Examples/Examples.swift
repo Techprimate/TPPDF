@@ -27,12 +27,13 @@ enum Examples {
     static var factories: [ExampleSection] {
         [
             .init(header: "Popular Examples", examples: [
+                .init(name: "Text", factory: TextExampleFactory()),
                 .init(name: "List", factory: ListExampleFactory()),
                 .init(name: "Images", factory: ImageExampleFactory()),
                 .init(name: "Groups", factory: GroupExampleFactory()),
                 .init(name: "Table", factory: TableExampleFactory()),
                 .init(name: "Lines", factory: LineSeparatorExampleFactory()),
-                .init(name: "Text", factory: TextExampleFactory()),
+                .init(name: "Document Settings", factory: DocumentSettingsExampleFactory()),
                 .init(name: "Table of Contents", factory: TableOfContentsExampleFactory()),
                 .init(name: "Header & Footer", factory: HeaderFooterExampleFactory()),
                 .init(name: "Multi Section", factory: MultiSectionExampleFactory()),

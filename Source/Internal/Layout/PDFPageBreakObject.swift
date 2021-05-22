@@ -74,6 +74,10 @@ internal class PDFPageBreakObject: PDFRenderObject {
         if !stayOnSamePage {
             PDFContextGraphics.endPDFPage(in: context)
             PDFContextGraphics.beginPDFPage(in: context, for: generator.document.layout.bounds)
+            // if there is a background color set, fill the page with it
+            if let color = generator.document.background.color {
+                PDFGraphics.drawRect(in: context, rect: generator.document.layout.bounds, outline: .none, fill: color)
+            }
             generator.drawDebugPageOverlay(in: context)
         }
         applyAttributes(in: context)

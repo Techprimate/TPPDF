@@ -333,6 +333,10 @@ extension PDFGenerator {
         // if first element is an external document, do not create the page
         if objects.first?.1 is PDFExternalPageObject == false {
             PDFContextGraphics.beginPDFPage(in: context, for: document.layout.bounds)
+            // if there is a background color set, fill the page with it
+            if let color = document.background.color {
+                PDFGraphics.drawRect(in: context, rect: document.layout.bounds, outline: .none, fill: color)
+            }
             drawDebugPageOverlay(in: context)
         }
 

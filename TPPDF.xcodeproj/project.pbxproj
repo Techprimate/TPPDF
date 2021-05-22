@@ -29,6 +29,8 @@
 		D48009CD25A2050900CFB266 /* Bundle+Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48009AB25A204C700CFB266 /* Bundle+Module.swift */; };
 		D4800A0125A2072900CFB266 /* 50-pages.pdf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D480095625A202DD00CFB266 /* 50-pages.pdf */; };
 		D4800A3425A2073200CFB266 /* sample.pdf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D480099925A202F200CFB266 /* sample.pdf */; };
+		D49B05E82658E76C0084A0B7 /* PDFDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B05E62658E76C0084A0B7 /* PDFDocument.swift */; };
+		D49B05E92658E76C0084A0B7 /* PDFDocumentBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B05E72658E76C0084A0B7 /* PDFDocumentBackground.swift */; };
 		OBJ_415 /* CwlCatchException.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_356 /* CwlCatchException.swift */; };
 		OBJ_417 /* CwlCatchExceptionSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CwlCatchException::CwlCatchExceptionSupport::Product" /* CwlCatchExceptionSupport.framework */; };
 		OBJ_425 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_362 /* Package.swift */; };
@@ -151,7 +153,6 @@
 		OBJ_613 /* PDFListItemSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* PDFListItemSymbol.swift */; };
 		OBJ_614 /* PDFInfo+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* PDFInfo+Equatable.swift */; };
 		OBJ_615 /* PDFInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* PDFInfo.swift */; };
-		OBJ_616 /* PDFDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* PDFDocument.swift */; };
 		OBJ_617 /* PDFGenerator+Generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* PDFGenerator+Generation.swift */; };
 		OBJ_618 /* PDFGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* PDFGenerator.swift */; };
 		OBJ_619 /* PDFGeneratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* PDFGeneratorProtocol.swift */; };
@@ -630,6 +631,8 @@
 		D480095625A202DD00CFB266 /* 50-pages.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "50-pages.pdf"; sourceTree = "<group>"; };
 		D480099925A202F200CFB266 /* sample.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sample.pdf; sourceTree = "<group>"; };
 		D48009AB25A204C700CFB266 /* Bundle+Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Module.swift"; sourceTree = "<group>"; };
+		D49B05E62658E76C0084A0B7 /* PDFDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFDocument.swift; sourceTree = "<group>"; };
+		D49B05E72658E76C0084A0B7 /* PDFDocumentBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFDocumentBackground.swift; sourceTree = "<group>"; };
 		"Nimble::Nimble::Product" /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* PDFExternalDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFExternalDocument.swift; sourceTree = "<group>"; };
 		OBJ_101 /* PDFContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFContext.swift; sourceTree = "<group>"; };
@@ -871,7 +874,6 @@
 		OBJ_366 /* Callsite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callsite.swift; sourceTree = "<group>"; };
 		OBJ_368 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		OBJ_369 /* QuickConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickConfiguration.swift; sourceTree = "<group>"; };
-		OBJ_37 /* PDFDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDocument.swift; sourceTree = "<group>"; };
 		OBJ_371 /* DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSL.swift; sourceTree = "<group>"; };
 		OBJ_372 /* World+DSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "World+DSL.swift"; sourceTree = "<group>"; };
 		OBJ_373 /* ErrorUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorUtility.swift; sourceTree = "<group>"; };
@@ -1096,6 +1098,15 @@
 			);
 			name = Common;
 			path = Tests/Common;
+			sourceTree = "<group>";
+		};
+		D49B05E52658E76C0084A0B7 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				D49B05E62658E76C0084A0B7 /* PDFDocument.swift */,
+				D49B05E72658E76C0084A0B7 /* PDFDocumentBackground.swift */,
+			);
+			path = Document;
 			sourceTree = "<group>";
 		};
 		OBJ_100 /* Graphics */ = {
@@ -1969,6 +1980,7 @@
 		OBJ_8 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				D49B05E52658E76C0084A0B7 /* Document */,
 				OBJ_9 /* External */,
 				OBJ_11 /* Graphics */,
 				OBJ_18 /* Groups */,
@@ -1976,7 +1988,6 @@
 				OBJ_27 /* Layout */,
 				OBJ_30 /* List */,
 				OBJ_34 /* Metadata */,
-				OBJ_37 /* PDFDocument.swift */,
 				OBJ_38 /* PDFGenerator+Generation.swift */,
 				OBJ_39 /* PDFGenerator.swift */,
 				OBJ_40 /* PDFGeneratorProtocol.swift */,
@@ -2590,7 +2601,6 @@
 				OBJ_613 /* PDFListItemSymbol.swift in Sources */,
 				OBJ_614 /* PDFInfo+Equatable.swift in Sources */,
 				OBJ_615 /* PDFInfo.swift in Sources */,
-				OBJ_616 /* PDFDocument.swift in Sources */,
 				OBJ_617 /* PDFGenerator+Generation.swift in Sources */,
 				OBJ_618 /* PDFGenerator.swift in Sources */,
 				OBJ_619 /* PDFGeneratorProtocol.swift in Sources */,
@@ -2598,6 +2608,7 @@
 				OBJ_621 /* PDFPageFormat+Layout.swift in Sources */,
 				OBJ_622 /* PDFPageFormat+SizeConstants.swift in Sources */,
 				OBJ_623 /* PDFPageFormat.swift in Sources */,
+				D49B05E92658E76C0084A0B7 /* PDFDocumentBackground.swift in Sources */,
 				OBJ_624 /* PDFSection.swift in Sources */,
 				OBJ_625 /* PDFSectionColumn.swift in Sources */,
 				OBJ_626 /* PDFTableOfContent.swift in Sources */,
@@ -2678,6 +2689,7 @@
 				OBJ_701 /* PDFGenerator+Debug.swift in Sources */,
 				OBJ_702 /* PDFGenerator+Layout.swift in Sources */,
 				OBJ_703 /* Int+RomanNumerals.swift in Sources */,
+				D49B05E82658E76C0084A0B7 /* PDFDocument.swift in Sources */,
 				OBJ_704 /* PDFPagination+Equatable.swift in Sources */,
 				OBJ_705 /* PDFPagination.swift in Sources */,
 				OBJ_706 /* PDFPaginationClosure.swift in Sources */,
