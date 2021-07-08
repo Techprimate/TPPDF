@@ -347,11 +347,11 @@ internal class PDFTableObject: PDFRenderObject {
 
             let filterResult = filterCellsOnPage(for: generator, items: nextPageCells,
                                                  minOffset: minOffset, maxOffset: maxOffset,
-                                                 shouldSplitCellsOnPageBreak: table.shouldSplitCellsOnPageBreak)
+                                                 pageBreakMode: table.pageBreakMode)
             let onPageCells = filterResult.cells
             nextPageCells = filterResult.remainder
             // If none of the cells fit on the current page, the algorithm will try again on the next page and if it occurs again, an error should be thrown
-            if onPageCells.isEmpty && !firstPage, let firstInvalidCell = nextPageCells.first {
+            if table.pageBreakMode == .never && onPageCells.isEmpty && !firstPage, let firstInvalidCell = nextPageCells.first {
                 throw PDFError.tableCellTooBig(cell: firstInvalidCell.cell)
             }
 
@@ -424,9 +424,9 @@ internal class PDFTableObject: PDFRenderObject {
     ///   - items: List of cells to filter
     ///   - minOffset: Minimum `y`-position on the page
     ///   - maxOffset: Maximum `y`-position on the page
-    ///   - shouldSplitCellsOnPageBreak: If `true`, cells won't be sliced and shown on both pages, instead moved entirely to the next page
+    ///   - pageBreakMode: Specifies how page breaks should be handled
     /// - Returns: Two lists of cells, see `FilteredCells`
-    internal func filterCellsOnPage(for generator: PDFGenerator, items: [PDFTableCalculatedCell], minOffset: CGFloat, maxOffset: CGFloat, shouldSplitCellsOnPageBreak: Bool) -> FilteredCells {
+    internal func filterCellsOnPage(for generator: PDFGenerator, items: [PDFTableCalculatedCell], minOffset: CGFloat, maxOffset: CGFloat, pageBreakMode: PDFPageBreakMode) -> FilteredCells {
         // Maximum height available
         let contentHeight = maxOffset - minOffset
         var result = FilteredCells(cells: [], remainder: [])
@@ -441,12 +441,14 @@ internal class PDFTableObject: PDFRenderObject {
             if cellFrame.maxY < maxOffset { // TODO: is the row padding relevant here?
                 result.cells.append(item)
             } else {
+                let isBeingSplitOrContinued = pageBreakMode == .allow || (pageBreakMode == .avoid && cellFrame.minY <= minOffset)
+                
                 // If cells should be split and cell is partially on current page, add it to the cells, the cell will be sliced afterwards
-                if shouldSplitCellsOnPageBreak && cellFrame.minY < maxOffset {
+                if isBeingSplitOrContinued && cellFrame.minY < maxOffset {
                     result.cells.append(item)
                 }
                 var nextPageCell = item
-                if shouldSplitCellsOnPageBreak {
+                if isBeingSplitOrContinued {
                     nextPageCell.frames.cell.origin.y -= contentHeight
                     nextPageCell.frames.content.origin.y -= contentHeight
                 } else {

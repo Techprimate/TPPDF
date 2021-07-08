@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		95D850F22678B452002C7762 /* PDFPageBreakMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D850F12678B452002C7762 /* PDFPageBreakMode.swift */; };
 		D47CBEDB25A3AFD90071CD3A /* EmptyDocumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47CBEDA25A3AFD90071CD3A /* EmptyDocumentTests.swift */; };
 		D48008C025A200AD00CFB266 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48008BF25A200AD00CFB266 /* XCTest.framework */; };
 		D48008C125A200AD00CFB266 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D48008BF25A200AD00CFB266 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -620,6 +621,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		95D850F12678B452002C7762 /* PDFPageBreakMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFPageBreakMode.swift; sourceTree = "<group>"; };
 		"CwlCatchException::CwlCatchException::Product" /* CwlCatchException.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CwlCatchException.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CwlCatchException::CwlCatchExceptionSupport::Product" /* CwlCatchExceptionSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CwlCatchExceptionSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CwlPreconditionTesting::CwlMachBadInstructionHandler::Product" /* CwlMachBadInstructionHandler.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CwlMachBadInstructionHandler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1520,6 +1522,7 @@
 		OBJ_27 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				95D850F12678B452002C7762 /* PDFPageBreakMode.swift */,
 				OBJ_28 /* PDFContainer.swift */,
 				OBJ_29 /* PDFPageLayout.swift */,
 			);
@@ -2603,6 +2606,7 @@
 				OBJ_626 /* PDFTableOfContent.swift in Sources */,
 				OBJ_627 /* NSAttributedString+PDFTableContent.swift in Sources */,
 				OBJ_628 /* Number+PDFTableContentable.swift in Sources */,
+				95D850F22678B452002C7762 /* PDFPageBreakMode.swift in Sources */,
 				OBJ_629 /* PDFTableContent+ContentType.swift in Sources */,
 				OBJ_630 /* PDFTableContent.swift in Sources */,
 				OBJ_631 /* PDFTableContentable.swift in Sources */,

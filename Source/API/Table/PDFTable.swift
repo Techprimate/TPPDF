@@ -48,9 +48,9 @@ public class PDFTable: PDFDocumentObject {
     public var showHeadersOnEveryPage: Bool = false
 
     /**
-     Cells should split when overlapping page
+     Specifies how page breaks should be handled
      */
-    public var shouldSplitCellsOnPageBreak = false
+    public var pageBreakMode: PDFPageBreakMode = .never
 
     /**
      Count of rows and columns in this table

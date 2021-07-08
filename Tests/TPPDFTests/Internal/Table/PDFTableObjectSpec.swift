@@ -219,7 +219,7 @@ class PDFTableObjectSpec: XCTestCase {
         table.widths = [0.1, 0.3, 0.3, 0.3]
         table.margin = 10
         table.padding = 10
-        table.shouldSplitCellsOnPageBreak = false
+        table.pageBreakMode = .never
         table.style.columnHeaderCount = 3
 
         for row in 0..<table.size.rows {
