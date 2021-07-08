@@ -40,6 +40,7 @@
 		D49855532461FB0B00D54270 /* Image-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D49855372461FB0B00D54270 /* Image-4.jpg */; };
 		D49855542461FB0B00D54270 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D49855382461FB0B00D54270 /* Icon.png */; };
 		D49855562461FB9A00D54270 /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49855552461FB9A00D54270 /* Examples.swift */; };
+		D49B06002658E7FD0084A0B7 /* DocumentSettingsExampleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B05FF2658E7FD0084A0B7 /* DocumentSettingsExampleFactory.swift */; };
 		D4D28D2323AA1A6D00028D5A /* ExamplesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D28D2223AA1A6D00028D5A /* ExamplesListViewController.swift */; };
 		D4FF9A28249A488A006FF2ED /* TPPDF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4FF9A27249A488A006FF2ED /* TPPDF.framework */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		D49855372461FB0B00D54270 /* Image-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Image-4.jpg"; sourceTree = "<group>"; };
 		D49855382461FB0B00D54270 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		D49855552461FB9A00D54270 /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
+		D49B05FF2658E7FD0084A0B7 /* DocumentSettingsExampleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsExampleFactory.swift; sourceTree = "<group>"; };
 		D4D28D2223AA1A6D00028D5A /* ExamplesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesListViewController.swift; sourceTree = "<group>"; };
 		D4FF9A27249A488A006FF2ED /* TPPDF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TPPDF.framework; path = Carthage/Build/iOS/TPPDF.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -131,7 +133,7 @@
 			);
 			name = "Supporting Files";
 			path = Example;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		D49855162461FB0B00D54270 /* Shared */ = {
 			isa = PBXGroup;
@@ -157,6 +159,7 @@
 		D498551D2461FB0B00D54270 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				D49B05FF2658E7FD0084A0B7 /* DocumentSettingsExampleFactory.swift */,
 				D498551E2461FB0B00D54270 /* PaginationExampleFactory.swift */,
 				D498551F2461FB0B00D54270 /* TableOfContentsExampleFactory.swift */,
 				D49855202461FB0B00D54270 /* TableExampleFactory.swift */,
@@ -368,6 +371,7 @@
 				D49855392461FB0B00D54270 /* ExampleFactory.swift in Sources */,
 				D498554C2461FB0B00D54270 /* MetadataExampleFactory.swift in Sources */,
 				D49855412461FB0B00D54270 /* TextStylesExampleFactory.swift in Sources */,
+				D49B06002658E7FD0084A0B7 /* DocumentSettingsExampleFactory.swift in Sources */,
 				D49855472461FB0B00D54270 /* ListExampleFactory.swift in Sources */,
 				D498553D2461FB0B00D54270 /* PaginationExampleFactory.swift in Sources */,
 				D49855422461FB0B00D54270 /* MultiSectionExampleFactory.swift in Sources */,

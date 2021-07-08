@@ -41,6 +41,7 @@
 		D49855532461FB0B00D54270 /* Image-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D49855372461FB0B00D54270 /* Image-4.jpg */; };
 		D49855542461FB0B00D54270 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D49855382461FB0B00D54270 /* Icon.png */; };
 		D49855562461FB9A00D54270 /* Examples.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49855552461FB9A00D54270 /* Examples.swift */; };
+		D49B06082658E84C0084A0B7 /* DocumentSettingsExampleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B06072658E84C0084A0B7 /* DocumentSettingsExampleFactory.swift */; };
 		D4B7EB0725A1D345007D09C7 /* sample-large.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D4B7EB0525A1D32F007D09C7 /* sample-large.pdf */; };
 		D4D28D2323AA1A6D00028D5A /* ExamplesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D28D2223AA1A6D00028D5A /* ExamplesListViewController.swift */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		D49855372461FB0B00D54270 /* Image-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Image-4.jpg"; sourceTree = "<group>"; };
 		D49855382461FB0B00D54270 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		D49855552461FB9A00D54270 /* Examples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Examples.swift; sourceTree = "<group>"; };
+		D49B06072658E84C0084A0B7 /* DocumentSettingsExampleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsExampleFactory.swift; sourceTree = "<group>"; };
 		D4B7EB0525A1D32F007D09C7 /* sample-large.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "sample-large.pdf"; sourceTree = "<group>"; };
 		D4D28D2223AA1A6D00028D5A /* ExamplesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,6 +170,7 @@
 			children = (
 				D49855552461FB9A00D54270 /* Examples.swift */,
 				D498552B2461FB0B00D54270 /* ExperimentFactory.swift */,
+				D49B06072658E84C0084A0B7 /* DocumentSettingsExampleFactory.swift */,
 				D49855262461FB0B00D54270 /* ExternalDocumentExampleFactory.swift */,
 				D49855242461FB0B00D54270 /* GroupExampleFactory.swift */,
 				D49855252461FB0B00D54270 /* HeaderFooterExampleFactory.swift */,
@@ -365,6 +368,7 @@
 				D49855392461FB0B00D54270 /* ExampleFactory.swift in Sources */,
 				D498554C2461FB0B00D54270 /* MetadataExampleFactory.swift in Sources */,
 				D49855412461FB0B00D54270 /* TextStylesExampleFactory.swift in Sources */,
+				D49B06082658E84C0084A0B7 /* DocumentSettingsExampleFactory.swift in Sources */,
 				D49855472461FB0B00D54270 /* ListExampleFactory.swift in Sources */,
 				D498553D2461FB0B00D54270 /* PaginationExampleFactory.swift in Sources */,
 				D49855422461FB0B00D54270 /* MultiSectionExampleFactory.swift in Sources */,

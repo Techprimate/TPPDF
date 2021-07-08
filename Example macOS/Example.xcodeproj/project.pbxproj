@@ -44,6 +44,7 @@
 		D48C53D924A26C0000D7A3DD /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D48C53BD24A26C0000D7A3DD /* Icon.png */; };
 		D48C53DC24A26E5400D7A3DD /* TPPDF in Frameworks */ = {isa = PBXBuildFile; productRef = D48C53DB24A26E5400D7A3DD /* TPPDF */; };
 		D48C53DE24A27A0100D7A3DD /* PDFView+SwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48C53DD24A27A0100D7A3DD /* PDFView+SwiftUI.swift */; };
+		D49B05FC2658E7A60084A0B7 /* DocumentSettingsExampleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B05FB2658E7A60084A0B7 /* DocumentSettingsExampleFactory.swift */; };
 		D4B7EB0B25A1DAD2007D09C7 /* sample-large.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D4B7EB0A25A1DACE007D09C7 /* sample-large.pdf */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		D48C53BC24A26C0000D7A3DD /* Image-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Image-4.jpg"; sourceTree = "<group>"; };
 		D48C53BD24A26C0000D7A3DD /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		D48C53DD24A27A0100D7A3DD /* PDFView+SwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PDFView+SwiftUI.swift"; sourceTree = "<group>"; };
+		D49B05FB2658E7A60084A0B7 /* DocumentSettingsExampleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentSettingsExampleFactory.swift; sourceTree = "<group>"; };
 		D4B7EB0A25A1DACE007D09C7 /* sample-large.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "sample-large.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				D48C53B224A26C0000D7A3DD /* Examples.swift */,
+				D49B05FB2658E7A60084A0B7 /* DocumentSettingsExampleFactory.swift */,
 				D48C53AF24A26C0000D7A3DD /* ExperimentFactory.swift */,
 				D48C53AA24A26C0000D7A3DD /* ExternalDocumentExampleFactory.swift */,
 				D48C53A824A26C0000D7A3DD /* GroupExampleFactory.swift */,
@@ -345,6 +348,7 @@
 				D48C53D124A26C0000D7A3DD /* Examples.swift in Sources */,
 				D48C53CE24A26C0000D7A3DD /* ExperimentFactory.swift in Sources */,
 				D48C53C124A26C0000D7A3DD /* PaginationExampleFactory.swift in Sources */,
+				D49B05FC2658E7A60084A0B7 /* DocumentSettingsExampleFactory.swift in Sources */,
 				D45C42ED24A3C1970040FE37 /* ProgressBar.swift in Sources */,
 				D48C53CA24A26C0000D7A3DD /* MultipleDocumentsExampleFactory.swift in Sources */,
 			);

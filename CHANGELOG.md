@@ -1,13 +1,17 @@
 # Change Log
 
 ## [Unreleased](https://github.com/techprimate/TPPDF/tree/HEAD) (2021-??-??)
-[Full Changelog](https://github.com/techprimate/TPPDF/compare/2.3.5...HEAD)
+[Full Changelog](https://github.com/techprimate/TPPDF/compare/2.3.5...2.4.0)
 
 **Implemented enhancements:**
+
+- Added paper background colors (#244)
 
 **Fixed bugs:**
 
 **Closed issues:**
+
+- Issue #244
 
 **Merged pull requests:**
 

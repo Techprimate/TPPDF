@@ -6,6 +6,7 @@
   + [Elements](#elements)
   + [Container](#container)
   + [Header & Footer](#header--footer)
+  + [Background](#background)
 * [Elements Index](#elements-index)
   + [Line Separator](#line-separator)
   + [Simple Text](#simple-text)
@@ -133,6 +134,17 @@ This command adds the text **Created using TPPDF for iOS** to the footer of all 
 Basically all elements which are either to either a header (`headerLeft`, `headerCenter` or `headerRight`) or footer (`footerLeft`, `footerCenter` or `footerRight`) container, are considered as header and footer elements and will be repeated on each page.
 
 If a page does not have any content, e.g. an empty page in between two pages, the header and footer elements won't be added to this page either.
+
+### Background
+
+*Introduced: 2.4.0*
+
+By default the page content is rendered with a transparent background. It is possible to set a different fill color by changing the `document.background.color`:
+
+```
+let document = PDFDocument(format: .a4)
+document.background.color = .green
+```
 
 ## Elements Index
 
